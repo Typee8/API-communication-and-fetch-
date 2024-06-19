@@ -1,0 +1,77 @@
+.basket__header--medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.total-price__value {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.basket__header {
+  font-size: 1.2rem;
+}
+
+.basket__header--main {
+  font-size: 1.6rem;
+}
+
+.basket__header--medium {
+  font-size: 1.3rem;
+}
+
+.item__total-price {
+  font-size: 1.3rem;
+}
+
+.basket__header--mobile,
+.item__prices {
+  font-size: 1rem;
+}
+
+.order__field-input {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 650px) {
+  .basket__header {
+    font-size: 1.3rem;
+  }
+
+  .basket__header--main {
+    font-size: 2rem;
+  }
+
+  .basket__header--medium {
+    font-size: 1.5rem;
+  }
+
+  .item__total-price {
+    font-size: 1.5rem;
+  }
+
+  .item__prices {
+    font-size: 1.2rem;
+  }
+
+  .order__field-input {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 950px) {
+
+  .basket__header {
+    font-size: 1.3rem;
+  }
+
+  .basket__header--main {
+    font-size: 2.5rem;
+  }
+
+  .basket__header--medium {
+    font-size: 1.5rem;
+  }
+
+  .order__field-input {
+    font-size: 1.3rem;
+  }
+}

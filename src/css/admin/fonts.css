@@ -1,0 +1,109 @@
+:root {
+  font-size: 16px;
+  --font-size-scale-tablet: 1.2;
+  --font-size-scale-desktop: 1.4;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+* {
+  font-family: 'Montserrat';
+  font-weight: var(--font-weight-normal);
+  color: white;
+}
+
+.excursions__price,
+.excursions__field-input,
+.order__field-submit {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.form__field {
+  color: black;
+}
+
+.form__row-error {
+  color: red;
+}
+
+.excursions__field-input,
+.order__field-submit {
+  font-size: 1rem;
+}
+
+.admin {
+  --font-size: 2rem;
+}
+
+.header {
+  --font-size: 1.5rem;
+}
+
+.form {
+  --font-size: 1.2rem;
+}
+
+.form__field {
+  --font-size: 1rem;
+}
+
+.excursions__name {
+  --font-size: 1.5rem;
+}
+
+.admin,
+.header,
+.form,
+.form__field,
+.excursions__name {
+  font-size: var(--font-size);
+}
+
+@media (min-width: 650px) {
+
+  .admin,
+  .header,
+  .form,
+  .form__field,
+  .excursions__name {
+    font-size: calc(var(--font-size) * var(--font-size-scale-tablet));
+  }
+}
+
+@media(min-width: 1200px) {
+
+  .admin,
+  .header,
+  .form,
+  .form__field,
+  .excursions__name {
+    font-size: calc(var(--font-size) * var(--font-size-scale-desktop));
+  }
+}

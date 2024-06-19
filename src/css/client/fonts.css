@@ -1,0 +1,111 @@
+:root {
+  font-size: 16px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+* {
+  font-family: 'Montserrat';
+  font-weight: var(--font-weight-normal);
+  color: white;
+}
+
+.text--navbar {
+  font-weight: var(--font-weight-medium);
+}
+
+.header--logo,
+.header--panel,
+.excursions__price {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.header--mainpage,
+.header__border {
+  font-weight: var(--font-weight-bold);
+}
+
+.header {
+  font-size: 1.5rem;
+}
+
+.header--mainpage {
+  font-size: 2.3rem;
+}
+
+.header--logo {
+  font-size: 1.2rem;
+}
+
+.text--navbar {
+  font-size: 1rem;
+}
+
+@media (min-width: 650px) {
+  .header {
+    font-size: 1.8rem;
+  }
+
+  .header--mainpage {
+    font-size: 3rem;
+  }
+
+  .header--logo {
+    font-size: 1.5rem;
+  }
+
+  .text--navbar {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .header--mainpage {
+    font-size: 4rem;
+  }
+
+  .mainpage__text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .header--mainpage {
+    font-size: 4.4rem;
+  }
+
+  .text--navbar {
+    font-size: 1rem;
+  }
+
+}

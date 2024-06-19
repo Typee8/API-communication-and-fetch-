@@ -1,0 +1,187 @@
+:root {
+  --primary-color: #517579;
+  --primary-color-bright: #658888;
+  --primary-color-stripe: #7a9e9e;
+  --secondary-color: #011E3F;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  row-gap: 40px;
+  min-height: 100vh;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #517579 0%, #899280 100%);
+}
+
+.admin {
+  text-align: center;
+}
+
+.admin,
+.header {
+  position: relative;
+  grid-column: 1 / 3;
+  padding-bottom: 5px;
+}
+
+.admin {
+  margin-inline: auto;
+  border-bottom: 3px solid var(--primary-color-stripe);
+}
+
+.header {
+  text-align: center;
+  @media (min-width: 950px) {
+    text-align: unset;
+  };
+  border-bottom: 3px solid var(--primary-color-stripe);
+}
+
+.panel__excursions {
+  grid-column: 1 / 3;
+  display: grid;
+  justify-content: center;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, 330px);
+
+  @media (max-width: 350px) {
+    grid-template-columns: repeat(auto-fit, 290px);
+  }
+}
+
+.excursions__item,
+.panel__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: linear-gradient(120deg, #517579 40%, #a9a483 200%);
+}
+
+.excursions__item {
+  padding: 20px 40px;
+}
+
+.panel__form {
+  padding: 40px;
+}
+
+
+.panel__form {
+  grid-column: 1 / 3;
+}
+
+.form {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto-fit;
+}
+
+.form__field {
+  margin-top: 10px;
+}
+
+.form__row {
+  grid-column: 1 / 3
+}
+
+.form__row--description {
+  grid-row: 4 / 5;
+}
+
+@media (min-width: 950px) {
+  .form__row {
+    grid-column: 1 / 2;
+  }
+
+  .form__row--description {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+  }
+}
+
+.form__field--longtext {
+  min-height: 40vh;
+}
+
+.order__field--submit {
+  justify-self: center;
+  grid-column: 1 / 3;
+}
+
+.excursions__item:nth-child(odd) {
+  background: linear-gradient(130deg, #517579 40%, #a9a483 160%);
+}
+
+.excursions__item ::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.excursions__item ::-webkit-scrollbar-thumb {
+  border-radius: 100vw;
+  background-color: var(--secondary-color);
+}
+
+.excursions__item ::-webkit-scrollbar-track {
+  margin-block: 0.5em;
+  border-radius: 100vw;
+  background-color: white;
+}
+
+.excursions__description {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary-color-stripe);
+}
+
+.form__label {
+  display: flex;
+  flex-flow: column;
+}
+
+.excursions__field {
+  text-align: center;
+}
+
+.excursions__field-input,
+.order__field-submit {
+  padding: 20px;
+  border: 4px solid white;
+  background-color: var(--secondary-color);
+}
+
+.order__field-submit {
+  width: 200px;
+}
+
+.excursions__field-input {
+  margin-top: 30px;
+  min-width: 110px;
+}
+
+.excursions__form {
+  margin-top: auto;
+  text-align: center;
+}
+
+.excursions__form> :first-child {
+  margin-bottom: 10px;
+}
+
+.excursions__field-input--update {
+  @media(min-width: 350px) {
+  margin-right: 20px;
+  }
+}
+
+.excursions__item--prototype {
+  display: none;
+}
+
+.excursions__name {
+  display: inline-block;
+  margin-bottom: 10px;
+  border-bottom: 3px solid var(--primary-color-stripe);
+}

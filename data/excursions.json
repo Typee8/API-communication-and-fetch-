@@ -1,0 +1,47 @@
+{
+  "excursions": [
+    {
+      "name": "Kraków",
+      "adultsPrice": "80",
+      "childrenPrice": "60",
+      "description": "Kraków, Poland's stunning ex-capital, boasts a medieval core with a grand market square, St. Mary's Basilica, and Wawel Royal Castle. This vibrant city offers underground salt mines, a Jewish quarter (Kazimierz), and a buzzing restaurant scene, making it a captivating historical and cultural gem.",
+      "id": 1
+    },
+    {
+      "name": "Wrocław",
+      "adultsPrice": "100",
+      "childrenPrice": "80",
+      "description": "Wrocław, Poland's charming \"City of Bridges,\" stuns with its Oder River islets, colorful buildings, and Gothic Town Hall. Explore its historical heart, visit the National Museum, or take a boat trip. Wrocław offers a youthful vibe with craft breweries, trendy cafes, and a lively atmosphere, making it a city that blends history with modern energy.",
+      "id": 2
+    },
+    {
+      "name": "Gdańsk",
+      "description": "Gdańsk, Poland's captivating port city, enthralls with its rich maritime history. Explore its medieval Old Town, wander along the Motława River, and marvel at the magnificent Neptune Fountain. Unveil the city's amber trade legacy, delve into World War II history at the European Solidarity Centre, and savor fresh seafood. Gdańsk offers a unique blend of architectural beauty, historical significance, and modern charm.",
+      "adultsPrice": "130",
+      "childrenPrice": "110",
+      "id": 3
+    },
+    {
+      "name": "Warszawa",
+      "description": "Warszawa, Poland's phoenix-like capital, pulsates with a vibrant mix of history and modernity. Its reconstructed Old Town stuns with colorful buildings and the iconic Sigismund's Column. Immerse yourself in the grandeur of the Royal Castle, explore remnants of the Jewish Ghetto, or pay respects at the POLIN Museum. Warsaw offers a dynamic food scene, trendy bars, and a youthful energy, making it a city that thrives despite its turbulent past.",
+      "adultsPrice": "60",
+      "childrenPrice": "40",
+      "id": 4
+    },
+    {
+      "name": "Katowice",
+      "description": "Katowice, Poland, sheds its industrial past to reveal a modern and surprising city. Once a coal and steel center, Katowice has transformed into a cultural hub. Explore the Nikiszowiec district with its charming red-brick tenements, delve into the Silesian Museum, or catch a concert at the iconic Spodek Arena. Katowice offers a unique blend of industrial heritage, contemporary art scene, and a burgeoning nightlife, making it a city on the rise.",
+      "adultsPrice": "70",
+      "childrenPrice": "45",
+      "id": 5
+    },
+    {
+      "name": "Zakopane",
+      "adultsPrice": "180",
+      "childrenPrice": "150",
+      "description": "Nestled at the foot of the majestic Tatra Mountains, Zakopane is Poland's crown jewel of winter sports and mountain adventures.  Ski slopes challenge enthusiasts, while hiking trails weave through breathtaking scenery.  Unwind in charming wooden chalets, explore the unique Goral culture, and soak up the fresh mountain air. Zakopane offers a perfect escape for nature lovers and adventure seekers alike.",
+      "id": 6
+    }
+  ],
+  "orders": []
+}
