@@ -6,15 +6,13 @@ It's the conclusion of **9th chapter** (there's **20**) of [devmentor.pl](https:
 
 ## How to check it out:
 
-1) fetch the project.
-2) clone it on your pc.
-
-**Make sure you're in the root directory!**
-
-3) use ***npm install*** to install the required packages.
-4) use ***npm run jsonServer*** to enable the app access server's data.
-5) use ***npm run start*** to launch the project.
-6) in your url add new (or change index.html) path segment: admin.html to access admin panel.
+1. fetch the project.
+2. clone it on your pc.
+3. **Make sure you're in the root directory!**
+4. use ***npm install*** to install the required packages.
+5. use ***npm run jsonServer*** to enable the app access server's data.
+6. use ***npm run start*** to launch the project.
+7. in your url add new (or change index.html) path segment: admin.html to access admin panel.
 
 ---
 
