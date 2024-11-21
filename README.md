@@ -1,6 +1,6 @@
 
 ![API communication and fetch()](./README-assets/project-img.png)
-# API communication and fetch()
+# Travel Agency Site (JavaScript)
 
 It's the conclusion of **9th chapter** (there's **20**) of [devmentor.pl](https://devmentor.pl/mentoring-javascript) mentoring program.
 
