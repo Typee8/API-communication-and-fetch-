@@ -86,7 +86,7 @@ async function addExcursion(evt) {
   };
 
   await firebaseFetch.pushData(newExcursion);
-  alert(`Dodano wycieczkę!`);
+  alert(`Excursion added!`);
   location.reload();
 }
 
@@ -213,6 +213,6 @@ async function removeExcursion(evt) {
   const excursionsItem = evt.target.closest(".excursions__item");
 
   await firebaseFetch.removeData(excursionsItem.id);
-  alert("Usunięto wycieczkę");
+  alert("Excursion removed!");
   location.reload();
 }
