@@ -2,15 +2,15 @@ import "./../css/reset.css";
 import "./../css/admin/fonts.css";
 import "./../css/admin/global.css";
 
-import ExcursionsAPI from "./ExcursionsAPI";
-const excursionsAPI = new ExcursionsAPI();
+import FirebaseFetch from "./FirebaseFetch";
+const firebaseFetch = new FirebaseFetch();
 
 console.log("admin");
 
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
-  const { excursionsList } = await excursionsAPI.loadExcursions();
+  const excursionsList = await firebaseFetch.fetchData();
   showExcursions(excursionsList);
 
   const form = document.querySelector(".form");
@@ -85,7 +85,7 @@ async function addExcursion(evt) {
     description: description,
   };
 
-  await excursionsAPI.postData(newExcursion, "excursions");
+  await firebaseFetch.pushData(newExcursion);
   alert(`Dodano wycieczkę!`);
   location.reload();
 }
@@ -168,7 +168,7 @@ function editExcursion(evt) {
 
 function updateExcursion(editContentList, excursionItem) {
   const { excursionObj } = createExcursionObj(editContentList);
-  excursionsAPI.putData(excursionObj, "excursions", excursionItem.id);
+  firebaseFetch.updateData(excursionItem.id, excursionObj);
 }
 
 function createExcursionObj(editContentList) {
@@ -212,7 +212,7 @@ async function removeExcursion(evt) {
   evt.preventDefault();
   const excursionsItem = evt.target.closest(".excursions__item");
 
-  await excursionsAPI.deleteData('excursions', excursionsItem.id);
-  alert('Usunięto wycieczkę');
+  await firebaseFetch.removeData(excursionsItem.id);
+  alert("Usunięto wycieczkę");
   location.reload();
 }

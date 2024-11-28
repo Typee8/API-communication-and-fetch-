@@ -6,13 +6,13 @@ import "./../css/client/desktop.css";
 import "./../css/client/basket/basket-fonts.css";
 import "./../css/client/basket/basket.css";
 
-import ExcursionsAPI from "./ExcursionsAPI";
-import Validation from './Validation';
+import FirebaseFetch from "./FirebaseFetch";
+import Validation from "./Validation";
 import NavbarCSS from "./navbarCSS";
 
 const basket = [];
 
-const excursionsAPI = new ExcursionsAPI();
+const firebaseFetch = new FirebaseFetch();
 const validation = new Validation(basket);
 const navbarCSS = new NavbarCSS();
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", init);
 async function init() {
   navbarCSS.manageNavbar();
 
-  const { excursionsList } = await excursionsAPI.loadExcursions();
+  const excursionsList = await firebaseFetch.fetchData();
   showExcursions(excursionsList);
 
   const excursionsContainer = document.querySelector(".excursions");
@@ -285,10 +285,15 @@ async function placeOrder(evt) {
   const { name, email } = createPlaceOrderVariables();
   const { totalPrice } = orderTotalPrice();
   const { orderObj } = createOrderObj(basket, name, email);
-  await excursionsAPI.postData(orderObj, "orders");
+
+  //  place for saving data
+  //  await firebaseFetch.pushData(orderObj);
 
   alert(
-    `Dziękujemy za złożenie zamówienia o wartości ${totalPrice} PLN. Szczegóły zamówienia zostały wysłane na adres e-mail: ${email}`
+    `Thank you for placing an order worth ${totalPrice} PLN. The order details have been sent to the following email address: ${email}.
+    
+    This is a demo. No personal data was collected.
+    `
   );
   location.reload();
 }
@@ -308,11 +313,10 @@ function removeBasketItem(evt) {
 }
 
 async function matchExcursionsID(evt) {
-  const { excursionsList }= await excursionsAPI.loadExcursions();
+  const excursionsList = await firebaseFetch.fetchData();
 
   const excursionId = evt.target.parentElement.id;
   const selectedExcursion = excursionsList.find((excursion) => {
-    console.log(excursionId, "??", excursionsList);
     return excursion.id === excursionId;
   });
   return { selectedExcursion };
