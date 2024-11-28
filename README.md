@@ -4,15 +4,11 @@
 
 It's the conclusion of **9th chapter** (there's **20**) of [devmentor.pl](https://devmentor.pl/mentoring-javascript) mentoring program.
 
-## How to check it out:
+## Check it out:
 
-1. fetch the project.
-2. clone it on your pc.
-3. **Make sure you're in the root directory!**
-4. use ***npm install*** to install the required packages.
-5. use ***npm run jsonServer*** to enable the app access server's data.
-6. use ***npm run start*** to launch the project.
-7. in your url add new (or change index.html) path segment: admin.html to access admin panel.
+Thanks to GitHub Pages and Google Firebase it's online:
+Client site: https://typee8.github.io/Travel-Agency-Site-Production/
+Admin site: https://typee8.github.io/Travel-Agency-Site-Production/admin.html
 
 ---
 
