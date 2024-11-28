@@ -50,6 +50,10 @@ ul {
   color: white;
 }
 
+.mainpage__img {
+  content: url(../../assets/mainpage__img.png);
+}
+
 .mainpage__container {
   text-align: center;
 }
