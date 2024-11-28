@@ -6,8 +6,8 @@ It's the conclusion of **9th chapter** (there's **20**) of [devmentor.pl](https:
 
 ## Check it out:
 
-Thanks to GitHub Pages and Google Firebase it's online:
-Client site: https://typee8.github.io/Travel-Agency-Site-Production/
+Thanks to GitHub Pages and Google Firebase it's online: <br>
+Client site: https://typee8.github.io/Travel-Agency-Site-Production/ <br>
 Admin site: https://typee8.github.io/Travel-Agency-Site-Production/admin.html
 
 ---
